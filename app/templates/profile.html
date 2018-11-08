@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% block content %}
+<!--<table>
+    <tr>
+        <td align = center>
+            <h1>{{nickname}}</h1>
+        </td>
+    </tr>
+    <tr valign="top">
+        <td>
+            <img src="/static/images/avatar/default.jpg" width="256" height="256">  <img class = "center-block top_buf" src="/static/images/avatar/default.jpg" width="256" height="256">
+            <div id = "ch_p">change photo</div>
+            <div id = "e_p">edit profile</div>
+        </td>
+
+    </tr>
+    <tr>
+        </td>
+        <td>
+            <p>about me: {{about_me}}</p>
+        </td>
+    </tr>
+    </table>-->
+<link rel="stylesheet" href="/static/css/profile.css"> 
+<div class="row">
+
+  <div class="col-md-3 bag">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 back"> 
+            <img class = "center-block top_buf" src="/static/images/avatar/default.jpg" width="243" height="256"> 
+            <button href="/" class="btn btn-lg center-block btn-block top_buf">change photo</button>
+            <button href="/" class="btn btn-lg center-block btn-block">edit profile</button>
+        </div>
+    </div>
+  </div>
+  
+  <div class="col-md-9 bag">
+    <div class="row">
+        <div class="col-md-11 back"> 
+            <h1>{{nickname}}</h1>
+            <hr>
+            <div class = 'aboutme'>
+                about me: {{about_me}}
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

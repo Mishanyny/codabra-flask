@@ -1,0 +1,7 @@
+.navigation-custom{
+    background-image:none !important;
+    background-color:#81f28c !important
+                    }
+.navigation-custom .navbar-nav>li>a:hover{
+    background-color:#71d67b !important  
+                    }

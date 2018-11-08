@@ -1,0 +1,21 @@
+.back{
+        background-color: #dbffde
+    }    
+.back>hr{
+        border-color: #000000
+    }
+.top_buf{
+        margin-top:20px;
+    }
+.aboutme{
+        margin-top: 100px;
+        margin-bottom: 12px;
+        background-color: #efffef;
+        height:200px
+    }
+.btn{
+        background-color:#81f28c !important
+    }
+.btn:hover{
+    background-color:#71d67b !important  
+    }
