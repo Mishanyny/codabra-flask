@@ -1,5 +1,6 @@
 from . import profile
 from flask import render_template, flash, redirect
+from .models import User
 
 
 NAME = 'Misha'
@@ -9,9 +10,10 @@ def about():
     return render_template("about.html", name = NAME)
 
 
-@profile.route('/main_page/')
-def main_page():
-    return render_template("profile.html", nickname = NAME, about_me = 'my name is misha')
+@profile.route('/main_page/<int:user_id>/')
+def main_page(user_id):
+    user = User.objects(user_id = user_id).first()
+    return render_template("profile.html", user = user)
 
 @profile.route('/message/')
 def message():
